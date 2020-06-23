@@ -20,7 +20,6 @@ export default function App() {
     });
   },[]);
   
-
   async function handleLikeRepository(id) {
     let response = await Api.post(`repositories/${id}/like`);
     if(response.status == 200){
